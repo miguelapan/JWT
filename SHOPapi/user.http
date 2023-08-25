@@ -1,0 +1,35 @@
+
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FsdmFkb3JkYWxpQGRhbGkuZXMiLCJpYXQiOjE2OTI5NjE3MTZ9.JCsT0K2HaKmzg-EZ202bon4AD5X1fV_S3kNXkKhiub8
+
+###
+
+GET http://localhost:3000/users/64e74adf4e48675072ddd713
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWlndWVsIiwiaWF0IjoxNjkyODg2NTA5fQ.UXtS2kVPBixc-GsvWEoziUliy35qoGS_J9wT5sBBhCk
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "salvador@dali.es",
+    "password": "holahola"
+}
+
+###
+
+
+DELETE http://localhost:3000/users/64e88bb07269bc0c0297593c
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "salvador@dali.es",
+    "password": "holahola"
+}
+
+###

@@ -1,0 +1,37 @@
+GET http://localhost:3000/shop
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FsdmFkb3JAZGFsaS5lcyIsImlhdCI6MTY5Mjk2ODgyNH0.CPOStI8MBR8Hp7gir3K3enfTQJ_Q1Hk6bQXsnlDC0Lk
+###
+
+GET http://localhost:3000/shop/64e8a81546b1444faa268b3f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FsdmFkb3JAZGFsaS5lcyIsImlhdCI6MTY5Mjk2ODgyNH0.CPOStI8MBR8Hp7gir3K3enfTQJ_Q1Hk6bQXsnlDC0Lk
+###
+
+POST http://localhost:3000/shop
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2FsdmFkb3JAZGFsaS5lcyIsImlhdCI6MTY5Mjk2ODkyOH0.7qdifVeXZjkyXze9bwQUlRXgLbvDJGVtwo9DOjIr9Zk
+Content-Type: application/json
+
+{
+    "name": "name",
+    "description": "description",
+    "price": 10,
+    "imageURL": "imageURL"
+}
+
+###
+
+PUT http://localhost:3000/shop/64df38081fd3f3e43f524836
+Content-Type: application/json
+
+{
+    "name": "new name",
+    "description": "new description",
+    "price": 20,
+    "imageURL": "new imageURL"
+}
+
+###
+
+DELETE http://localhost:3000/shop/64e87fed5dd5520a53ce74ed
+
+###
+
